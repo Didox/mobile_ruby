@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @full_banner.name %>
+</p>
+
+<p>
+  <b>File:</b>
+  <%=h @full_banner.file %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%=h @full_banner.link %>
+</p>
+
+<p>
+  <b>Date begin:</b>
+  <%=h @full_banner.date_begin %>
+</p>
+
+<p>
+  <b>Date end:</b>
+  <%=h @full_banner.date_end %>
+</p>
+
+
+<%= link_to 'Edit', edit_full_banner_path(@full_banner) %> |
+<%= link_to 'Back', full_banners_path %>

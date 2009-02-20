@@ -1,0 +1,40 @@
+<h1>Editing popup</h1>
+
+<% form_for(@popup) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :file %><br />
+    <%= f.text_field :file %>
+  </p>
+  <p>
+    <%= f.label :link %><br />
+    <%= f.text_field :link %>
+  </p>
+  <p>
+    <%= f.label :width %><br />
+    <%= f.text_field :width %>
+  </p>
+  <p>
+    <%= f.label :height %><br />
+    <%= f.text_field :height %>
+  </p>
+  <p>
+    <%= f.label :date_begin %><br />
+    <%= f.datetime_select :date_begin %>
+  </p>
+  <p>
+    <%= f.label :date_end %><br />
+    <%= f.datetime_select :date_end %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @popup %> |
+<%= link_to 'Back', popups_path %>

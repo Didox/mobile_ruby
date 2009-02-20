@@ -1,0 +1,58 @@
+<p>
+  <b>Name:</b>
+  <%=h @page.name %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%=h @page.link %>
+</p>
+
+<p>
+  <b>Obs:</b>
+  <%=h @page.obs %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%=h @page.position %>
+</p>
+
+<p>
+  <b>Root page:</b>
+  <%=h @page.root_page_id %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%=h @page.color %>
+</p>
+
+<p>
+  <b>Title visibility:</b>
+  <%=h @page.title_visibility %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%=h @page.publish %>
+</p>
+
+<p>
+  <b>Restricted:</b>
+  <%=h @page.restricted %>
+</p>
+
+<p>
+  <b>Is menu:</b>
+  <%=h @page.is_menu %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%=h @page.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>

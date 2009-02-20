@@ -1,0 +1,32 @@
+<h1>Listing popups</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>File</th>
+    <th>Link</th>
+    <th>Width</th>
+    <th>Height</th>
+    <th>Date begin</th>
+    <th>Date end</th>
+  </tr>
+
+<% for popup in @popups %>
+  <tr>
+    <td><%=h popup.name %></td>
+    <td><%=h popup.file %></td>
+    <td><%=h popup.link %></td>
+    <td><%=h popup.width %></td>
+    <td><%=h popup.height %></td>
+    <td><%=h popup.date_begin %></td>
+    <td><%=h popup.date_end %></td>
+    <td><%= link_to 'Show', popup %></td>
+    <td><%= link_to 'Edit', edit_popup_path(popup) %></td>
+    <td><%= link_to 'Destroy', popup, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New popup', new_popup_path %>

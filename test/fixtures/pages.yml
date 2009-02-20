@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  link: MyString
+  obs: MyText
+  position: 1
+  root_page_id: 1
+  color: MyString
+  title_visibility: false
+  publish: false
+  restricted: false
+  is_menu: false
+  content: MyText
+
+two:
+  name: MyString
+  link: MyString
+  obs: MyText
+  position: 1
+  root_page_id: 1
+  color: MyString
+  title_visibility: false
+  publish: false
+  restricted: false
+  is_menu: false
+  content: MyText

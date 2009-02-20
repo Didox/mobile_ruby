@@ -1,0 +1,28 @@
+<h1>Listing full_banners</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>File</th>
+    <th>Link</th>
+    <th>Date begin</th>
+    <th>Date end</th>
+  </tr>
+
+<% for full_banner in @full_banners %>
+  <tr>
+    <td><%=h full_banner.name %></td>
+    <td><%=h full_banner.file %></td>
+    <td><%=h full_banner.link %></td>
+    <td><%=h full_banner.date_begin %></td>
+    <td><%=h full_banner.date_end %></td>
+    <td><%= link_to 'Show', full_banner %></td>
+    <td><%= link_to 'Edit', edit_full_banner_path(full_banner) %></td>
+    <td><%= link_to 'Destroy', full_banner, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New full_banner', new_full_banner_path %>

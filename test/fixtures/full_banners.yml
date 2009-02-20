@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  file: MyString
+  link: MyString
+  date_begin: 2009-02-20 15:47:48
+  date_end: 2009-02-20 15:47:48
+
+two:
+  name: MyString
+  file: MyString
+  link: MyString
+  date_begin: 2009-02-20 15:47:48
+  date_end: 2009-02-20 15:47:48

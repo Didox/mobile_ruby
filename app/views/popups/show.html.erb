@@ -1,0 +1,38 @@
+<p>
+  <b>Name:</b>
+  <%=h @popup.name %>
+</p>
+
+<p>
+  <b>File:</b>
+  <%=h @popup.file %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%=h @popup.link %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%=h @popup.width %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%=h @popup.height %>
+</p>
+
+<p>
+  <b>Date begin:</b>
+  <%=h @popup.date_begin %>
+</p>
+
+<p>
+  <b>Date end:</b>
+  <%=h @popup.date_end %>
+</p>
+
+
+<%= link_to 'Edit', edit_popup_path(@popup) %> |
+<%= link_to 'Back', popups_path %>
