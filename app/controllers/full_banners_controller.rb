@@ -1,6 +1,6 @@
 class FullBannersController < ApplicationController
-  # GET /full_banners
-  # GET /full_banners.xml
+  before_filter :login_required, :only => [:index, :show, :new, :edit, :create, :update, :destroy]
+
   def index
     @full_banners = FullBanner.find(:all)
 

@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
-  # GET /groups
-  # GET /groups.xml
+  before_filter :login_required, :only => [:index, :show, :new, :edit, :create, :update, :destroy]
+  
   def index
     @groups = Group.find(:all)
 

@@ -12,4 +12,25 @@ class ApplicationController < ActionController::Base
   # Uncomment this to filter the contents of submitted sensitive data parameters
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password
+
+  ################## login acessor ###################
+  #before_filter :get_user
+
+   protected
+    def user_authenticate
+      User.find(session[:user_id])
+    end
+
+    def login_required
+      return true if session[:user_id]
+      access_denied
+      return false
+    end
+
+    def access_denied
+      session[:return_to] = request.request_uri
+      flash[:notice] = 'voce precisa estar logado para acessar esta página.'
+      redirect_to :controller => 'login', :action => 'index'
+    end
+  ################## login acessor ###################
 end

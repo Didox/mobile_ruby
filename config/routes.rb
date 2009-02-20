@@ -6,8 +6,11 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :popups
 
   map.resources :users
+  map.login 'logar', :controller => 'users', :action => 'authenticate'
 
   map.resources :pages
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

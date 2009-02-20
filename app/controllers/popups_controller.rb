@@ -1,6 +1,6 @@
 class PopupsController < ApplicationController
-  # GET /popups
-  # GET /popups.xml
+  before_filter :login_required, :only => [:index, :show, :new, :edit, :create, :update, :destroy]
+
   def index
     @popups = Popup.find(:all)
 

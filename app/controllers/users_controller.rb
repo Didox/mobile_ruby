@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_filter :login_required, :only => [:index, :show, :new, :edit, :create, :update, :destroy]
+  
   # GET /users
   # GET /users.xml
   def index
@@ -7,6 +9,31 @@ class UsersController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @users }
+    end
+  end
+
+  def logout
+    session[:return_to] = nil
+    session[:user_id] = nil
+    redirect_to(:controller => "login" , :action => "index")
+  end
+
+  def login
+    session[:user_id] = nil
+    if request.post?
+      user = User.authenticate(params[:name], params[:password])
+      if user
+        session[:user_id] = user
+        if session[:return_to].blank?
+          redirect_to(:controller => "admin", :action => "index")
+        else
+          redirect_to session[:return_to]
+          session[:return_to] = nil
+        end
+      else
+        flash[:notice] = "Login ou senha inválidos"
+        redirect_to(:controller => "login", :action => "index")
+      end
     end
   end
 
