@@ -9,7 +9,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090220182916) do
+ActiveRecord::Schema.define(:version => 20090220191417) do
+
+  create_table "full_banners", :force => true do |t|
+    t.string   "name"
+    t.string   "file"
+    t.string   "link"
+    t.datetime "date_begin"
+    t.datetime "date_end"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "groups", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pages", :force => true do |t|
     t.string   "name"
@@ -23,6 +39,27 @@ ActiveRecord::Schema.define(:version => 20090220182916) do
     t.boolean  "restricted"
     t.boolean  "is_menu"
     t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "popups", :force => true do |t|
+    t.string   "name"
+    t.string   "file"
+    t.string   "link"
+    t.integer  "width"
+    t.integer  "height"
+    t.datetime "date_begin"
+    t.datetime "date_end"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "login"
+    t.string   "password"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

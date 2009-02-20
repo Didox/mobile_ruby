@@ -35,3 +35,38 @@ Processing PagesController#new (for 127.0.0.1 at 2009-02-20 15:35:01) [GET]
 Rendering template within layouts/pages
 Rendering pages/new
 Completed in 44ms (View: 27, DB: 2) | 200 OK [http://localhost/pages/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20090220182916)
+Migrating to CreateUsers (20090220184048)
+  [4;36;1mSQL (8.4ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `login` varchar(255), `password` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090220184048')[0m
+Migrating to CreatePopups (20090220184634)
+  [4;36;1mSQL (19.1ms)[0m   [0;1mCREATE TABLE `popups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `file` varchar(255), `link` varchar(255), `width` int(11), `height` int(11), `date_begin` datetime, `date_end` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090220184634')[0m
+Migrating to CreateFullBanners (20090220184748)
+  [4;36;1mSQL (8.6ms)[0m   [0;1mCREATE TABLE `full_banners` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `file` varchar(255), `link` varchar(255), `date_begin` datetime, `date_end` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090220184748')[0m
+Migrating to CreateGroups (20090220191417)
+  [4;36;1mSQL (7.4ms)[0m   [0;1mCREATE TABLE `groups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090220191417')[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `full_banners`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `full_banners`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `full_banners`[0m
+  [4;36;1mSQL (9.4ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `groups`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `groups`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `pages`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `pages`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `popups`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `popups`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `popups`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `users`[0m
