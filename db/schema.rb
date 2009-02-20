@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090220191417) do
+ActiveRecord::Schema.define(:version => 20090220195140) do
 
   create_table "full_banners", :force => true do |t|
     t.string   "name"
@@ -27,12 +27,17 @@ ActiveRecord::Schema.define(:version => 20090220191417) do
     t.datetime "updated_at"
   end
 
+  create_table "groups_pages", :force => true do |t|
+    t.integer "group_id"
+    t.integer "page_id"
+  end
+
   create_table "pages", :force => true do |t|
     t.string   "name"
     t.string   "link"
     t.text     "obs"
     t.integer  "position"
-    t.integer  "root_page_id"
+    t.integer  "parent_id"
     t.string   "color"
     t.boolean  "title_visibility"
     t.boolean  "publish"
@@ -41,6 +46,11 @@ ActiveRecord::Schema.define(:version => 20090220191417) do
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "pages_popups", :force => true do |t|
+    t.integer "popups_id"
+    t.integer "page_id"
   end
 
   create_table "popups", :force => true do |t|
@@ -60,6 +70,7 @@ ActiveRecord::Schema.define(:version => 20090220191417) do
     t.string   "login"
     t.string   "password"
     t.string   "email"
+    t.integer  "group_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

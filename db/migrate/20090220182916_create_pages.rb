@@ -5,7 +5,7 @@ class CreatePages < ActiveRecord::Migration
       t.string :link
       t.text :obs
       t.integer :position
-      t.integer :root_page_id
+      t.integer :parent_id
       t.string :color
       t.boolean :title_visibility
       t.boolean :publish
