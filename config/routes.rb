@@ -1,16 +1,26 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :groups
 
+
+
   map.resources :full_banners
+
+
 
   map.resources :popups
 
+
+
   map.resources :users
-  map.login 'logar', :controller => 'users', :action => 'authenticate'
+  map.login 'logar', :controller => 'users', :action => 'login'
+  map.logout 'sair', :controller => 'users', :action => 'logout'
+
 
   map.resources :pages
 
 
+  
+  map.root :controller => "login"
 
 
   # The priority is based upon order of creation: first created -> highest priority.

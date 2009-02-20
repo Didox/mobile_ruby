@@ -70,7 +70,6 @@ ActiveRecord::Schema.define(:version => 20090220195140) do
     t.string   "login"
     t.string   "password"
     t.string   "email"
-    t.integer  "group_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
