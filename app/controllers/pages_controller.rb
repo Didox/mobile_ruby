@@ -21,17 +21,21 @@ class PagesController < ApplicationController
     end
   end
 
-  # GET /pages/new
-  # GET /pages/new.xml
-  def new
-    @page = Page.new
+  def bind_selects
     @pages = [[:root, 0]]
     #@pages << Page.find(:all).collect {|p| [ p.name, p.id ]}
     Page.find(:all).collect do |p|
       @pages << [ p.name, p.id ]
     end
-    
-    
+    len = @pages.length
+    len -= 1
+    @positions = 0..len
+  end
+  # GET /pages/new
+  # GET /pages/new.xml
+  def new
+    bind_selects
+    @page = Page.new    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @page }
@@ -40,6 +44,7 @@ class PagesController < ApplicationController
 
   # GET /pages/1/edit
   def edit
+    bind_selects
     @page = Page.find(params[:id])
   end
 

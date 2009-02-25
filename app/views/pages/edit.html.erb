@@ -17,11 +17,11 @@
   </p>
   <p>
     <%= f.label :position %><br />
-    <%= f.text_field :position %>
+    <%= f.select(:position, @positions) %>
   </p>
   <p>
     <%= f.label :parent_id %><br />
-    <%= f.text_field :parent_id %>
+    <%= f.select(:parent_id, @pages) %>
   </p>
   <p>
     <%= f.label :color %><br />
