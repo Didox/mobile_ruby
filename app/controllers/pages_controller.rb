@@ -25,7 +25,13 @@ class PagesController < ApplicationController
   # GET /pages/new.xml
   def new
     @page = Page.new
-
+    @pages = [[:root, 0]]
+    #@pages << Page.find(:all).collect {|p| [ p.name, p.id ]}
+    Page.find(:all).collect do |p|
+      @pages << [ p.name, p.id ]
+    end
+    
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @page }

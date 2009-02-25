@@ -21,7 +21,8 @@
   </p>
   <p>
     <%= f.label :parent_id %><br />
-    <%= f.text_field :parent_id %>
+    <%#= f.select(:parent_id, options_for_select(@pages, 2) )%>
+    <%= f.select(:parent_id, @pages) %>
   </p>
   <p>
     <%= f.label :color %><br />

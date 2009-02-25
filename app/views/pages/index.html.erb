@@ -21,7 +21,7 @@
     <td><%=h page.link %></td>
     <td><%=h page.obs %></td>
     <td><%=h page.position %></td>
-    <td><%=h page.parent_id %></td>
+    <td><%=h page.parent.name unless page.parent.nil? %></td>
     <td><%=h page.color %></td>
     <td><%=h page.title_visibility %></td>
     <td><%=h page.publish %></td>
