@@ -11,5 +11,10 @@
     <%= link_to "Home", :controller => "admin", :action => "index" %>
   </h1>
   <%= yield  %>
+
+
+  <%unless flash[:notice].blank? %>
+      <dir class="aviso"><%= flash[:notice] %></dir>
+  <%end%>
 </body>
 </html>

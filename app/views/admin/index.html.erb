@@ -1,5 +1,6 @@
 <h3>Menu do sistema</h3>
 
+
 <ul>
   <li>
     <%= link_to "Usuários", :controller => "users", :action => "index" %>
@@ -16,4 +17,8 @@
    <li>
     <%= link_to "Popup", :controller => "popups", :action => "index" %>
   </li>
+  <li>
+    <%= link_to "Sair", :controller => "users", :action => "logout" %>
+  </li>
+
 </ul>

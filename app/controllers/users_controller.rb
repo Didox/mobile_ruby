@@ -21,7 +21,7 @@ class UsersController < ApplicationController
   def login
     session[:user_id] = nil
     if request.post?
-      user = User.authenticate(params[:name], params[:password])
+      user = User.authenticate(params[:login][:name], params[:login][:password])
       if user
         session[:user_id] = user
         if session[:return_to].blank?
