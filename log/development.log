@@ -7874,3 +7874,1130 @@ Processing LoginController#index (for 127.0.0.1 at 2009-02-25 14:20:57) [GET]
 Rendering template within layouts/application
 Rendering login/index
 Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-25 14:22:26) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Redirected to controllerloginactionindex
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/admin]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-25 14:22:26) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-02-25 14:22:34) [POST]
+  Parameters: {"commit"=>"Entrar", "authenticity_token"=>"eb1abcecfe7e49bde4667b50b1bad00c4a0fd9b0", "login"=>{"name"=>"didox", "password"=>"teste"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'didox' AND `users`.`password` = 'teste') [0m
+Redirected to /admin
+Completed in 27ms (DB: 1) | 302 Found [http://localhost/logar]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-25 14:22:35) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing GroupsController#index (for 127.0.0.1 at 2009-02-25 14:22:36) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mGroup Load (0.2ms)[0m   [0;1mSELECT * FROM `groups` [0m
+Rendering template within layouts/application
+Rendering groups/index
+  [4;35;1mGroup Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+Completed in 34ms (View: 15, DB: 1) | 200 OK [http://localhost/groups]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-25 14:22:39) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-25 14:22:40) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-25 14:22:42) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-02-25 14:22:44) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPage Load (0.2ms)[0m   [0mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mPage Columns (10.2ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.2ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 0) [0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 0) [0m
+Completed in 81ms (View: 38, DB: 11) | 200 OK [http://localhost/pages]
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2009-02-25 14:23:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` [0m
+  [4;36;1mPage Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering pages/edit
+Completed in 32ms (View: 13, DB: 1) | 200 OK [http://localhost/pages/1/edit]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-02-25 14:23:11) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mPage Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 0) [0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 0) [0m
+Completed in 29ms (View: 16, DB: 1) | 200 OK [http://localhost/pages]
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-25 14:23:16) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing UsersController#logout (for 127.0.0.1 at 2009-02-25 14:23:39) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Redirected to controllerloginactionindex
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/sair]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-25 14:23:39) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-25 14:23:47) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Redirected to controllerloginactionindex
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/users]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-25 14:23:47) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-02-25 14:23:54) [POST]
+  Parameters: {"commit"=>"Entrar", "authenticity_token"=>"eb1abcecfe7e49bde4667b50b1bad00c4a0fd9b0", "login"=>{"name"=>"didox", "password"=>"teste"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'didox' AND `users`.`password` = 'teste') [0m
+Redirected to /users
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/logar]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-25 14:23:54) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-25 14:23:59) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-26 08:57:48) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 08:57:50) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-26 08:57:52) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing UsersController#logout (for 127.0.0.1 at 2009-02-26 08:57:53) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Redirected to controllerloginactionindex
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/sair]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 08:57:53) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-02-26 08:58:35) [POST]
+  Parameters: {"commit"=>"Entrar", "authenticity_token"=>"eb1abcecfe7e49bde4667b50b1bad00c4a0fd9b0", "login"=>{"name"=>"didox", "password"=>"teste"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'didox' AND `users`.`password` = 'teste') [0m
+Redirected to controlleradminactionindex
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/logar]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-26 08:58:35) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 08:58:37) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 08:59:50) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 21ms (View: 12, DB: 2) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-02-26 08:59:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 78ms (View: 6, DB: 1) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 08:59:53) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2009-02-26 08:59:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 08:59:58) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:00:27) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:00:31) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 09:00:35) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 24ms (View: 15, DB: 2) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2009-02-26 09:01:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 09:01:03) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 15ms (View: 8, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-02-26 09:01:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 09:01:06) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:01:08) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 09:01:10) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 18ms (View: 14, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2009-02-26 09:01:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (4.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (4.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 36ms (View: 18, DB: 10) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 09:01:45) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-02-26 09:01:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 22ms (View: 11, DB: 1) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 09:01:49) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:01:51) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:01:52) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 26ms (View: 16, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:01:53) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:01:53) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:01:54) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:01:54) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:01:54) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:03:06) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 68024ms (View: 17, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:04:24) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 114ms (View: 23, DB: 2) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:04:25) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 112ms (View: 17, DB: 2) | 200 OK [http://localhost/users/new]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-26 09:04:33) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing UsersController#logout (for 127.0.0.1 at 2009-02-26 09:04:35) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Redirected to controllerloginactionindex
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/sair]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:04:35) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:04:36) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:04:37) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:04:37) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:04:37) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:04:37) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 75ms (View: 72, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-02-26 09:04:45) [POST]
+  Parameters: {"commit"=>"Entrar", "authenticity_token"=>"eb1abcecfe7e49bde4667b50b1bad00c4a0fd9b0", "login"=>{"name"=>"didox", "password"=>"teste"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'didox' AND `users`.`password` = 'teste') [0m
+Redirected to controlleradminactionindex
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/logar]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-26 09:04:46) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing UsersController#logout (for 127.0.0.1 at 2009-02-26 09:04:48) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Redirected to controllerloginactionindex
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/sair]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:04:49) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:05:11) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:05:14) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:05:15) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:05:15) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:05:15) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-02-26 09:05:18) [POST]
+  Parameters: {"commit"=>"Entrar", "authenticity_token"=>"eb1abcecfe7e49bde4667b50b1bad00c4a0fd9b0", "login"=>{"name"=>"danilo", "password"=>"teste"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'danilo' AND `users`.`password` = 'teste') [0m
+Redirected to controllerloginactionindex
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/logar]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:05:18) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:05:21) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:06:13) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:06:14) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:06:15) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:06:15) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:06:15) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:07:02) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:07:07) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:07:07) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:07:08) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-26 09:07:08) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-02-26 09:07:15) [POST]
+  Parameters: {"commit"=>"Entrar", "authenticity_token"=>"eb1abcecfe7e49bde4667b50b1bad00c4a0fd9b0", "login"=>{"name"=>"didox", "password"=>"teste"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'didox' AND `users`.`password` = 'teste') [0m
+Redirected to controlleradminactionindex
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/logar]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-26 09:07:15) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 09:07:20) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-02-26 09:07:21) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 97ms (View: 11, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 09:07:22) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 15ms (View: 9, DB: 3) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2009-02-26 09:07:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 09:07:25) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 87ms (View: 81, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-26 09:07:36) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing GroupsController#index (for 127.0.0.1 at 2009-02-26 09:07:37) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mGroup Load (0.1ms)[0m   [0;1mSELECT * FROM `groups` [0m
+Rendering template within layouts/application
+Rendering groups/index
+  [4;35;1mGroup Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+Completed in 18ms (View: 8, DB: 1) | 200 OK [http://localhost/groups]
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing GroupsController#edit (for 127.0.0.1 at 2009-02-26 09:07:39) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mGroup Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+  [4;36;1mGroup Load (0.2ms)[0m   [0;1mSELECT * FROM `groups` WHERE (`groups`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering groups/edit
+Completed in 32ms (View: 14, DB: 2) | 200 OK [http://localhost/groups/2/edit]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing GroupsController#index (for 127.0.0.1 at 2009-02-26 09:07:40) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mGroup Load (0.1ms)[0m   [0;1mSELECT * FROM `groups` [0m
+Rendering template within layouts/application
+Rendering groups/index
+  [4;35;1mGroup Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://localhost/groups]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing GroupsController#new (for 127.0.0.1 at 2009-02-26 09:07:41) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mGroup Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+Rendering template within layouts/application
+Rendering groups/new
+Completed in 18ms (View: 7, DB: 1) | 200 OK [http://localhost/groups/new]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing GroupsController#index (for 127.0.0.1 at 2009-02-26 09:07:42) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mGroup Load (0.1ms)[0m   [0mSELECT * FROM `groups` [0m
+Rendering template within layouts/application
+Rendering groups/index
+  [4;36;1mGroup Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/groups]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-26 09:07:43) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-02-26 09:07:45) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mPage Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 0) [0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 0) [0m
+Completed in 30ms (View: 16, DB: 1) | 200 OK [http://localhost/pages]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-26 09:07:49) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing FullBannersController#index (for 127.0.0.1 at 2009-02-26 09:07:51) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mFullBanner Load (0.1ms)[0m   [0;1mSELECT * FROM `full_banners` [0m
+Rendering template within layouts/application
+Rendering full_banners/index
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/full_banners]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing FullBannersController#new (for 127.0.0.1 at 2009-02-26 09:07:54) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mFullBanner Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `full_banners`[0m
+Rendering template within layouts/application
+Rendering full_banners/new
+Completed in 96ms (View: 86, DB: 1) | 200 OK [http://localhost/full_banners/new]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing FullBannersController#create (for 127.0.0.1 at 2009-02-26 09:08:27) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"eb1abcecfe7e49bde4667b50b1bad00c4a0fd9b0", "full_banner"=>{"date_end(4i)"=>"12", "name"=>"TESTE", "date_end(5i)"=>"07", "date_begin(1i)"=>"2009", "date_begin(2i)"=>"2", "date_begin(3i)"=>"25", "date_begin(4i)"=>"12", "date_begin(5i)"=>"07", "date_end(1i)"=>"2009", "link"=>"", "file"=>"FILE.JǴ", "date_end(2i)"=>"4", "date_end(3i)"=>"26"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mFullBanner Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `full_banners`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFullBanner Create (0.2ms)[0m   [0;1mINSERT INTO `full_banners` (`name`, `created_at`, `updated_at`, `date_begin`, `file`, `link`, `date_end`) VALUES('TESTE', '2009-02-26 12:08:27', '2009-02-26 12:08:27', '2009-02-25 12:07:00', 'FILE.JǴ', '', '2009-04-26 12:07:00')[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mCOMMIT[0m
+Redirected to #<FullBanner:0x7f8be456dd90>
+Completed in 26ms (DB: 9) | 302 Found [http://localhost/full_banners]
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing FullBannersController#show (for 127.0.0.1 at 2009-02-26 09:08:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mFullBanner Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `full_banners`[0m
+  [4;36;1mFullBanner Load (0.3ms)[0m   [0;1mSELECT * FROM `full_banners` WHERE (`full_banners`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering full_banners/show
+Completed in 36ms (View: 16, DB: 2) | 200 OK [http://localhost/full_banners/1]
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing FullBannersController#edit (for 127.0.0.1 at 2009-02-26 09:08:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mFullBanner Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `full_banners`[0m
+  [4;35;1mFullBanner Load (0.1ms)[0m   [0mSELECT * FROM `full_banners` WHERE (`full_banners`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering full_banners/edit
+Completed in 36ms (View: 23, DB: 1) | 200 OK [http://localhost/full_banners/1/edit]
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing FullBannersController#update (for 127.0.0.1 at 2009-02-26 09:08:36) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"eb1abcecfe7e49bde4667b50b1bad00c4a0fd9b0", "id"=>"1", "full_banner"=>{"date_end(4i)"=>"12", "name"=>"TESTE", "date_end(5i)"=>"07", "date_begin(1i)"=>"2009", "date_begin(2i)"=>"2", "date_begin(3i)"=>"25", "date_begin(4i)"=>"12", "date_begin(5i)"=>"07", "date_end(1i)"=>"2009", "link"=>"", "file"=>"FILE.JPG", "date_end(2i)"=>"4", "date_end(3i)"=>"26"}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mFullBanner Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `full_banners`[0m
+  [4;36;1mFullBanner Load (0.1ms)[0m   [0;1mSELECT * FROM `full_banners` WHERE (`full_banners`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFullBanner Update (0.3ms)[0m   [0;1mUPDATE `full_banners` SET `updated_at` = '2009-02-26 12:08:36', `file` = 'FILE.JPG' WHERE `id` = 1[0m
+  [4;35;1mSQL (28.7ms)[0m   [0mCOMMIT[0m
+Redirected to #<FullBanner:0x7f8be44d9758>
+Completed in 47ms (DB: 30) | 302 Found [http://localhost/full_banners/1]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing FullBannersController#show (for 127.0.0.1 at 2009-02-26 09:08:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mFullBanner Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `full_banners`[0m
+  [4;36;1mFullBanner Load (0.3ms)[0m   [0;1mSELECT * FROM `full_banners` WHERE (`full_banners`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering full_banners/show
+Completed in 31ms (View: 9, DB: 1) | 200 OK [http://localhost/full_banners/1]
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing FullBannersController#index (for 127.0.0.1 at 2009-02-26 09:08:39) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mFullBanner Load (0.3ms)[0m   [0;1mSELECT * FROM `full_banners` [0m
+Rendering template within layouts/application
+Rendering full_banners/index
+  [4;35;1mFullBanner Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `full_banners`[0m
+Completed in 19ms (View: 9, DB: 1) | 200 OK [http://localhost/full_banners]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-26 09:08:41) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing PopupsController#index (for 127.0.0.1 at 2009-02-26 09:08:42) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPopup Load (0.2ms)[0m   [0;1mSELECT * FROM `popups` [0m
+Rendering template within layouts/application
+Rendering popups/index
+Completed in 24ms (View: 8, DB: 0) | 200 OK [http://localhost/popups]
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing PopupsController#new (for 127.0.0.1 at 2009-02-26 09:08:43) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPopup Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `popups`[0m
+Rendering template within layouts/application
+Rendering popups/new
+Completed in 39ms (View: 23, DB: 1) | 200 OK [http://localhost/popups/new]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing PopupsController#create (for 127.0.0.1 at 2009-02-26 09:09:00) [POST]
+  Parameters: {"popup"=>{"date_end(4i)"=>"12", "name"=>"TESTE", "date_end(5i)"=>"08", "date_begin(1i)"=>"2009", "date_begin(2i)"=>"2", "date_begin(3i)"=>"26", "date_begin(4i)"=>"12", "date_begin(5i)"=>"08", "height"=>"200", "date_end(1i)"=>"2009", "link"=>"", "file"=>"TESTE.JPG", "date_end(2i)"=>"4", "date_end(3i)"=>"26", "width"=>"200"}, "commit"=>"Create", "authenticity_token"=>"eb1abcecfe7e49bde4667b50b1bad00c4a0fd9b0"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPopup Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `popups`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPopup Create (0.3ms)[0m   [0;1mINSERT INTO `popups` (`name`, `created_at`, `updated_at`, `date_begin`, `height`, `file`, `link`, `width`, `date_end`) VALUES('TESTE', '2009-02-26 12:09:00', '2009-02-26 12:09:00', '2009-02-26 12:08:00', 200, 'TESTE.JPG', '', 200, '2009-04-26 12:08:00')[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCOMMIT[0m
+Redirected to #<Popup:0x7f8be443fb08>
+Completed in 23ms (DB: 5) | 302 Found [http://localhost/popups]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing PopupsController#show (for 127.0.0.1 at 2009-02-26 09:09:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPopup Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `popups`[0m
+  [4;36;1mPopup Load (0.2ms)[0m   [0;1mSELECT * FROM `popups` WHERE (`popups`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering popups/show
+Completed in 20ms (View: 8, DB: 1) | 200 OK [http://localhost/popups/1]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing PopupsController#index (for 127.0.0.1 at 2009-02-26 09:09:01) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPopup Load (0.3ms)[0m   [0;1mSELECT * FROM `popups` [0m
+Rendering template within layouts/application
+Rendering popups/index
+  [4;35;1mPopup Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `popups`[0m
+Completed in 23ms (View: 10, DB: 1) | 200 OK [http://localhost/popups]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-26 09:09:02) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-02-26 09:09:15) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-26 09:09:17) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
