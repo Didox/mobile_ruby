@@ -12,14 +12,14 @@
 <% for full_banner in @full_banners %>
   <tr>
     <td><%=h full_banner.name %></td>
-    <td><%=h full_banner.file %></td>
-    <td><%=h full_banner.link %></td>
-    <td><%=h full_banner.date_begin %></td>
-    <td><%=h full_banner.date_end %></td>
-    <td><%= link_to 'Show', full_banner %></td>
-    <td><%= link_to 'Edit', edit_full_banner_path(full_banner) %></td>
-    <td><%= link_to 'Add Pages', add_pages_full_banner_path(full_banner) %></td>
-    <td><%= link_to 'Destroy', full_banner, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><img src="<%=h full_banner.file %>" width="100px" height="30px" /></td>
+    <td><%=h "url(#{full_banner.link})" %></td>
+    <td><%=h full_banner.date_begin.strftime("%d/%m/%Y") %></td>
+    <td><%=h full_banner.date_end.strftime("%d/%m/%Y") %></td>
+    <td><%= link_to 'Show', full_banner, :class => "show" %></td>
+    <td><%= link_to 'Edit', edit_full_banner_path(full_banner), :class => "edit" %></td>
+    <td><%= link_to 'Add Pages', add_pages_full_banner_path(full_banner), :class => "pages" %></td>
+    <td><%= link_to 'Destroy', full_banner, :confirm => 'Are you sure?', :method => :delete, :class => "delete" %></td>
   </tr>
 <% end %>
 </table>

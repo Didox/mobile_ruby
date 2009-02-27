@@ -3,37 +3,28 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Link</th>
-    <th>Obs</th>
-    <th>Position</th>
     <th>Root page</th>
-    <th>Color</th>
     <th>Title visibility</th>
     <th>Publish</th>
     <th>Restricted</th>
-    <th>Is menu</th>
-    <th>Content</th>
+    <th>menu</th>
+    
   </tr>
 
 <% for page in @pages %>
   <tr>
     <td><%=h page.name %></td>
-    <td><%=h page.link %></td>
-    <td><%=h page.obs %></td>
-    <td><%=h page.position %></td>
     <td><%=h page.parent.name unless page.parent.nil? %></td>
-    <td><%=h page.color %></td>
     <td><%=h page.title_visibility %></td>
     <td><%=h page.publish %></td>
     <td><%=h page.restricted %></td>
     <td><%=h page.is_menu %></td>
-    <td><%=h page.content %></td>
-    <td><%= link_to 'Show', page %></td>
-    <td><%= link_to 'Edit', edit_page_path(page) %></td>
-    <td><%= link_to 'Add Groups', add_groups_page_path(page) %></td>
-    <td><%= link_to 'Add Popups', add_popups_page_path(page) %></td>
-    <td><%= link_to 'Add Full_banners', add_full_banners_page_path(page) %></td>
-    <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', page, :class => "show" %></td>
+    <td><%= link_to 'Edit', edit_page_path(page), :class => "edit" %></td>
+    <td><%= link_to 'Add Groups', add_groups_page_path(page), :class => "groups", :title => "adicionar grupos" %></td>
+    <td><%= link_to 'Add Popups', add_popups_page_path(page), :class => "popups", :title => "adicionar popups" %></td>
+    <td><%= link_to 'Add Full_banners', add_full_banners_page_path(page), :class => "fullbanners" , :title => "adicionar full banners"%></td>
+    <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete, :class => "delete" %></td>
   </tr>
 <% end %>
 </table>

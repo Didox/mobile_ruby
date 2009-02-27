@@ -14,16 +14,16 @@
 <% for popup in @popups %>
   <tr>
     <td><%=h popup.name %></td>
-    <td><%=h popup.file %></td>
-    <td><%=h popup.link %></td>
-    <td><%=h popup.width %></td>
-    <td><%=h popup.height %></td>
-    <td><%=h popup.date_begin %></td>
-    <td><%=h popup.date_end %></td>
-    <td><%= link_to 'Show', popup %></td>
-    <td><%= link_to 'Edit', edit_popup_path(popup) %></td>
-    <td><%= link_to 'Add Pages', add_pages_popup_path(popup) %></td>
-    <td><%= link_to 'Destroy', popup, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><img src="<%=h popup.file %>" width="50px" height="30px" /></td>
+    <td><%=h "url(#{popup.link})" %></td>
+    <td><%=h "#{popup.width}px" %></td>
+    <td><%=h "#{popup.height}px" %></td>
+    <td><%=h popup.date_begin.strftime("%d/%m/%Y") %></td>
+    <td><%=h popup.date_end.strftime("%d/%m/%Y") %></td>
+    <td><%= link_to 'Show', popup, :class => "show" %></td>
+    <td><%= link_to 'Edit', edit_popup_path(popup), :class => "edit" %></td>
+    <td><%= link_to 'Add Pages', add_pages_popup_path(popup), :class => "pages" %></td>
+    <td><%= link_to 'Destroy', popup, :confirm => 'Are you sure?', :method => :delete, :class => "delete" %></td>
   </tr>
 <% end %>
 </table>

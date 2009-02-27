@@ -1,6 +1,6 @@
 <h1>New popup</h1>
 
-<% form_for(@popup) do |f| %>
+<% form_for @popup, :html => {:multipart => true} do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -9,7 +9,7 @@
   </p>
   <p>
     <%= f.label :file %><br />
-    <%= f.text_field :file %>
+    <%= f.file_field :file %>
   </p>
   <p>
     <%= f.label :link %><br />
