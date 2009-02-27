@@ -10,6 +10,42 @@ class GroupsController < ApplicationController
     end
   end
 
+   def add_pages
+    @group = Group.find(params[:id])
+    ids = ""
+    @pages_add = []
+    @group.pages.collect do |p|
+      @pages_add << [ p.name, p.id ]
+      ids << "#{p.id},"
+    end
+    ids = ids[0,(ids.length-1)]
+
+    unless ids.blank?
+      @pages = Page.find(:all, :conditions => "id not in (#{ids})").collect{ |p| [ p.name, p.id ]}
+    else
+      @pages = Page.find(:all).collect{ |p| [ p.name, p.id ]}
+    end
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @group }
+    end
+  end
+
+  def save_pages
+    @group = Group.find(params[:id])
+    if params[:lstIAdd].nil?
+      @group.pages = []
+      redirect_to :action => "index"
+      return
+    end
+    
+    @group.pages = Page.find(params[:lstIAdd])
+    @group.save    
+
+    redirect_to :action => "index"
+  end
+
   # GET /groups/1
   # GET /groups/1.xml
   def show

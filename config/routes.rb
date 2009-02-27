@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :groups
-
+  map.add_pages_group 'adicionar_paginas/:id', :controller => 'groups', :action => 'add_pages'
+  map.save_pages_group 'salvando_paginas/:id', :controller => 'groups', :action => 'save_pages'
 
 
   map.resources :full_banners
