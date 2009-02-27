@@ -27,7 +27,7 @@ ActionController::Routing::Routes.draw do |map|
   map.add_full_banners_page 'adicionar_full_banners/:id', :controller => 'pages', :action => 'add_full_banners'
   map.save_full_banners_page 'salvando_full_banners/:id', :controller => 'pages', :action => 'save_full_banners'
   
-  map.root :controller => "login"
+  map.root :controller => "web"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
