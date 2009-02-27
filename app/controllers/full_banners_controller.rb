@@ -21,6 +21,42 @@ class FullBannersController < ApplicationController
     end
   end
 
+  def add_pages
+    @full_banner = FullBanner.find(params[:id])
+    ids = ""
+    @pages_add = []
+    @full_banner.pages.collect do |p|
+      @pages_add << [ p.name, p.id ]
+      ids << "#{p.id},"
+    end
+    ids = ids[0,(ids.length-1)]
+
+    unless ids.blank?
+      @pages = Page.find(:all, :conditions => "id not in (#{ids})").collect{ |p| [ p.name, p.id ]}
+    else
+      @pages = Page.find(:all).collect{ |p| [ p.name, p.id ]}
+    end
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @full_banner }
+    end
+  end
+
+  def save_pages
+    @full_banner = FullBanner.find(params[:id])
+    if params[:lstIAdd].nil?
+      @full_banner.pages = []
+      redirect_to :action => "index"
+      return
+    end
+
+    @full_banner.pages = Page.find(params[:lstIAdd])
+    @full_banner.save
+
+    redirect_to :action => "index"
+  end
+
   # GET /full_banners/new
   # GET /full_banners/new.xml
   def new

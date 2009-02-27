@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090220195140) do
+ActiveRecord::Schema.define(:version => 20090227162402) do
 
   create_table "full_banners", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,11 @@ ActiveRecord::Schema.define(:version => 20090220195140) do
     t.datetime "date_end"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "full_banners_pages", :force => true do |t|
+    t.integer "full_banner_id"
+    t.integer "page_id"
   end
 
   create_table "groups", :force => true do |t|
@@ -49,8 +54,8 @@ ActiveRecord::Schema.define(:version => 20090220195140) do
   end
 
   create_table "pages_popups", :force => true do |t|
-    t.integer "popups_id"
     t.integer "page_id"
+    t.integer "popup_id"
   end
 
   create_table "popups", :force => true do |t|

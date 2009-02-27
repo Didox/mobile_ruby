@@ -10,7 +10,7 @@ class GroupsController < ApplicationController
     end
   end
 
-   def add_pages
+  def add_pages
     @group = Group.find(params[:id])
     ids = ""
     @pages_add = []

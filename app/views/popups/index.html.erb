@@ -22,6 +22,7 @@
     <td><%=h popup.date_end %></td>
     <td><%= link_to 'Show', popup %></td>
     <td><%= link_to 'Edit', edit_popup_path(popup) %></td>
+    <td><%= link_to 'Add Pages', add_pages_popup_path(popup) %></td>
     <td><%= link_to 'Destroy', popup, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>

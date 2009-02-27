@@ -5,12 +5,14 @@ ActionController::Routing::Routes.draw do |map|
 
 
   map.resources :full_banners
-
+  map.add_pages_full_banner 'adicionar_paginas_full/:id', :controller => 'full_banners', :action => 'add_pages'
+  map.save_pages_full_banner 'salvando_paginas_full/:id', :controller => 'full_banners', :action => 'save_pages'
 
 
   map.resources :popups
-
-
+  map.add_pages_popup 'adicionar_paginas_pop/:id', :controller => 'popups', :action => 'add_pages'
+  map.save_pages_popup 'salvando_paginas_pop/:id', :controller => 'popups', :action => 'save_pages'
+  
 
   map.resources :users
   map.login 'logar', :controller => 'users', :action => 'login'
@@ -18,8 +20,12 @@ ActionController::Routing::Routes.draw do |map|
 
 
   map.resources :pages
-
-
+  map.add_groups_page 'adicionar_grupos/:id', :controller => 'pages', :action => 'add_groups'
+  map.save_groups_page 'salvando_grupos/:id', :controller => 'pages', :action => 'save_groups'
+  map.add_popups_page 'adicionar_popups/:id', :controller => 'pages', :action => 'add_popups'
+  map.save_popups_page 'salvando_popups/:id', :controller => 'pages', :action => 'save_popups'
+  map.add_full_banners_page 'adicionar_full_banners/:id', :controller => 'pages', :action => 'add_full_banners'
+  map.save_full_banners_page 'salvando_full_banners/:id', :controller => 'pages', :action => 'save_full_banners'
   
   map.root :controller => "login"
 

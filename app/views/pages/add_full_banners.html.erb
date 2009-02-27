@@ -1,0 +1,38 @@
+<%= javascript_include_tag "funcoes" %>
+
+<table width="100%" cellspacing="2" cellpadding="2" border="0" id="Table1">
+<tr id="tbConfig">
+<td>
+  <fieldset class="fieldSet"><legend class="legend" id="Legend3"><span id="Label2"><b><font face="Verdana" color="black" size="1">Configurações</font></b></span></legend>
+    <% form_tag({:controller => "pages", :action => "save_full_banners", :id => @page.id}, {:onSubmit => "checkedAll('lstIAdd')"}) do %>
+      <table width="600" cellspacing="0" cellpadding="0" border="0" id="Table2">
+          <tr>
+            <td style="width: 255px; height: 80px;">
+                <span id="Label3"><b><font face="Verdana" color="White" size="1">Paginas:</font></b></span>
+                
+                <%#= f.select(:pages, @pages, :multiple => true, :size => 3 ) %>
+                <%= select_tag "lstIPages", options_for_select(@full_banners), :multiple => true, :size => 8, :style => "width:200px" %>
+                
+             </td>
+            <td width="10%" align="center"><input type="button" value=">>" onclick="AddItem('lstIPages','lstIAdd')" style="width: 43px; height: 17px;" class="botao"/><br/>
+                <input type="button" value="<<" onclick="AddItem('lstIAdd','lstIPages')" style="width: 43px; height: 17px;" class="botao"/>
+            </td>
+            <td style="width: 255px; height: 80px;">
+                <span id="Label7"><b><font face="Verdana" color="White" size="1">Adicionados:</font></b></span>
+
+                <%= select_tag "lstIAdd", options_for_select(@full_banners_add), :multiple => true, :size => 8, :style => "width:200px" %>
+               
+            </td>
+            </tr>
+            <tr>
+                <td width="50%" align="center" colspan="3" style="height: 18px;">
+                  <%= submit_tag "save" %>
+                  <%= link_to "back", :controller => "pages", :action => "index" %>
+                </td>
+            </tr>
+        </table>
+       <%end%>
+    </fieldset>
+    </td>
+  </tr>
+</table>

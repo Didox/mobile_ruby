@@ -21,6 +21,43 @@ class PopupsController < ApplicationController
     end
   end
 
+  def add_pages
+    @popup = Popup.find(params[:id])
+    ids = ""
+    @pages_add = []
+    @popup.pages.collect do |p|
+      @pages_add << [ p.name, p.id ]
+      ids << "#{p.id},"
+    end
+    ids = ids[0,(ids.length-1)]
+
+    unless ids.blank?
+      @pages = Page.find(:all, :conditions => "id not in (#{ids})").collect{ |p| [ p.name, p.id ]}
+    else
+      @pages = Page.find(:all).collect{ |p| [ p.name, p.id ]}
+    end
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @popup }
+    end
+  end
+
+  def save_pages
+    @popup = Popup.find(params[:id])
+    if params[:lstIAdd].nil?
+      @popup.pages = []
+      redirect_to :action => "index"
+      return
+    end
+
+    @popup.pages = Page.find(params[:lstIAdd])
+    @popup.save
+
+    redirect_to :action => "index"
+  end
+
+  
   # GET /popups/new
   # GET /popups/new.xml
   def new
