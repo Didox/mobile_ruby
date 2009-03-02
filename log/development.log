@@ -37441,3 +37441,719 @@ ActionController::RoutingError (No route matches "/Noticias/foto/0,,18552670,00.
     /usr/bin/rdebug-ide:19
 
 Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing WebController#index (for 127.0.0.1 at 2009-02-27 17:50:35) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPage Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.2ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+Rendering template within layouts/mobile
+Rendering web/index
+Completed in 37ms (View: 12, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-27 17:50:35) [GET]
+
+
+ActionController::RoutingError (No route matches "/img/noticia_logoBasico.gif" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-27 17:50:35) [GET]
+
+
+ActionController::RoutingError (No route matches "/Noticias/foto/0,,18555885,00.jpg" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-27 17:50:35) [GET]
+
+
+ActionController::RoutingError (No route matches "/Noticias/foto/0,,18552670,00.jpg" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-27 17:50:50) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Redirected to controllerloginactionindex
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/admin]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-02-27 17:50:50) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-02-27 17:50:53) [POST]
+  Parameters: {"commit"=>"Entrar", "authenticity_token"=>"43a21e4a5f408ddfb826096200b5672584c9f5fd", "login"=>{"name"=>"didox", "password"=>"teste"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'didox' AND `users`.`password` = 'teste') [0m
+Redirected to /admin
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/logar]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-02-27 17:50:53) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-02-27 17:50:55) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPage Load (0.2ms)[0m   [0mSELECT * FROM `pages` [0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mPage Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 0) [0m
+  [4;36;1mPage Load (0.2ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 0) [0m
+Completed in 35ms (View: 19, DB: 2) | 200 OK [http://localhost/pages]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2009-02-27 17:50:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` [0m
+  [4;36;1mPage Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering pages/edit
+Completed in 33ms (View: 14, DB: 1) | 200 OK [http://localhost/pages/1/edit]
+  [4;36;1mUser Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-27 17:51:31) [GET]
+
+
+ActionController::RoutingError (No route matches "/img/noticia_logoBasico.gif" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing PagesController#update (for 127.0.0.1 at 2009-02-27 17:52:21) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"43a21e4a5f408ddfb826096200b5672584c9f5fd", "id"=>"1", "page"=>{"restricted"=>"0", "position"=>"0", "obs"=>"sdssdsdsdsdsd", "name"=>"teste danilo", "title_visibility"=>"1", "color"=>"#fff", "publish"=>"1", "content"=>"\t\r\n<div id=\"topo\">\r\n<h2>Este é o topo do site mobile</h2>\r\n</div>\r\n\r\n\t<div id=\"cont\">\r\n\t\t<!-- DESTAQUE -->\r\n\r\n\t\t<div class=\"dest\">\r\n<h3>\r\n<a href=\"/Noticias/Mundo/0,,MUL1020883-5602,00-OBAMA+CONFIRMA+SAIDA+TOTAL+DAS+TROPAS+AMERICANAS+DO+IRAQUE+PARA+FIM+DE.html\">Obama confirma para o fim de 2011 sa&iacute;da de tropas do Iraque </a>\r\n</h3>\r\n<p>No entanto, miss&otilde;es de combate americanas j&aacute; deixam o pa&iacute;s at&eacute; agosto de 2010. </p>\r\n</div><div class=\"dest\">\r\n<img src=\"/Noticias/foto/0,,18555885,00.jpg\"><p class=\"titulo\">\r\n\r\n<a href=\"/Noticias/Cinema/0,,MUL1020969-7086,00-TABLOIDE+INGLES+PUBLICA+FOTOS+DE+ATOR+MIRIM+DE+MILIONARIO+APOS+SUPOSTA+SURR.html\">Ator-mirim leva surra do pai ap&oacute;s vit&oacute;ria no Oscar, diz tabl&oacute;ide</a>\r\n</p>\r\n</div><div class=\"dest\">\r\n<p class=\"titulo\">\r\n<a href=\"/Noticias/Economia_Negocios/0,,MUL1020607-9356,00-PRESIDENTE+DE+TRIBUNAL+SUSPENDE+AS+MIL+DEMISSOES+NA+EMBRAER.html\">Justi&ccedil;a suspende 4.200 demiss&otilde;es na Embraer at&eacute; quinta</a>\r\n</p>\r\n</div><div class=\"dest\">\r\n<img src=\"/Noticias/foto/0,,18552670,00.jpg\"><p class=\"titulo\">\r\n\r\n<a href=\"/Noticias/Mundo/0,,MUL1020822-5602,00-BRASILEIRA+FERIDA+NA+SUICA+PRESTA+DEPOIMENTO+EM+ZURIQUE.html\">Brasileira ferida presta depoimento em Zurique</a>\r\n</p>\r\n</div>\r\n\r\n\r\n\t\t<div class=\"mais\"><a href=\"/Noticias/0,,DES-5597,00.html\" class=\"ge\"><strong>&raquo; todos os destaques</strong></a><br /></div>\r\n\t\t\r\n\t\t\r\n\r\n\r\n\r\n\t\r\n\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\t<div align=\"center\" class=\"banner\">\r\n\t\t\t\r\n\t\t\t\t<img src=\"http://ads.globo.com/RealMedia/ads/adstream_nx.ads/g1/home@x21!x21\" border=\"0\" />\r\n\t\t\t\r\n\t\t</div>\r\n\t\r\n\r\n\t\t\r\n\t\t<!-- PLANTAO -->\r\n\r\n\t\t<h4>plant&atilde;o</h4>\t\r\n<div class=\"plantao\">\r\n\t<div class=\"data\">SEX, 27/02/2009</div>\r\n\t<p class=\"pl\">\r\n<span><strong>17H|37</strong> | economia e neg&oacute;cios</span><a href=\"/Noticias/Economia_Negocios/0,,MUL1021178-9356,00-DOLAR+ACUMULA+ALTA+DE+EM+FEVEREIRO+E+FECHA+A+R.html\">D&oacute;lar acumula alta de 2,46% em fevereiro e fecha a R$ 2,371</a>\r\n\r\n</p><p class=\"pl\">\r\n<span><strong>17H|35</strong> | rio de janeiro</span><a href=\"/Noticias/Rio/0,,MUL1021158-5606,00-CINCO+MORADORES+DE+RUA+SAO+DETIDOS+NA+ZONA+SUL+DO+RIO.html\">Cinco moradores de rua s&atilde;o detidos na Zona Sul do Rio</a>\r\n</p><p class=\"p2\">\r\n<span><strong>17H|16</strong> | s&atilde;o paulo</span><a href=\"/Noticias/SaoPaulo/0,,MUL1020543-5605,00-TAUBATE+E+IGUAPE+SAO+AS+CIDADES+MAIS+CASTIGADAS+PELA+CHUVA+EM+SP+DIZ+INMET.html\">Taubat&eacute; e Iguape s&atilde;o as cidades mais castigadas pela chuva em SP, diz Inmet</a>\r\n\r\n</p>\r\n\r\n</div>\r\n\r\n\r\n\t\t<div class=\"mais\"><a href=\"/Noticias/0,,RSS-5597,00.html\" class=\"ge\"><strong>&raquo; todas as notícias</strong></a></div>\r\n\t\r\n        <!-- MENU -->\r\n\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\r\n\t\r\n\t\r\n\t\r\n\t\t<form class=\"\" action=\"/SecaoRedirect.ssp\" id=\"frm-esporte\">\r\n\t\t\t<fieldset>\r\n\t\t\t\t<label for=\"secoes\">Editorias</label>\r\n\r\n\t\t\t\t<select id=\"secoes\" name=\"secoes\">\r\n\t\t\t\t\t<optgroup label=\"G1\">\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5598\">Brasil</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"9658\">Carros</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5603\">Ciência e Saúde</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"9654\">Concursos e Empregos</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"9356\">Economia e Negócios</option>\r\n\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"15693\">Eleições 2008</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5602\">Mundo</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"6091\">Planeta Bizarro</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5601\">Política</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"7084\">Pop &amp; Arte</option>\r\n\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5606\">Rio de Janeiro</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5605\">São Paulo</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"6174\">Tecnologia</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5604\">Vestibular e Educação</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t</optgroup>\r\n\t\t\t\t</select>&nbsp;\r\n\t\t\t\t<input type=\"submit\" value=\"ok\" />\r\n\r\n\t\t\t</fieldset>\r\n\t\t</form>\r\n\t\r\n\r\n\t\t\r\n\t\t<div class=\"lnks\"><a href=\"#topo\">topo</a> | <a href=\"http://g1.globo.com/Noticias/0,,5597,00.html\">versão clássica</a></div>\r\n\r\n\t</div>\r\n\t\r\n\t<!-- RODAPE -->\r\n\t\r\n\r\n<div class=\"rdp\">\r\n\r\n\t<a href=\"http://m.g1.globo.com/Noticias/0,,5597,00.html\">notícias</a> | <a href=\"http://m.globoesporte.globo.com/Esportes/0,,9645,00.html\">esportes</a> | <a href=\"http://m.ego.globo.com/Gente/0,,9796,00.html\">entretenimento</a><hr />\r\n\t<a href=\"http://m.globo.com\">globo.com</a>\r\n</div>\r\n\r\n\r\n\t\r\n", "parent_id"=>"0", "link"=>"", "is_menu"=>"0"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPage Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPage Update (0.6ms)[0m   [0mUPDATE `pages` SET `content` = '	\r\n<div id=\"topo\">\r\n<h2>Este é o topo do site mobile</h2>\r\n</div>\r\n\r\n	<div id=\"cont\">\r\n		<!-- DESTAQUE -->\r\n\r\n		<div class=\"dest\">\r\n<h3>\r\n<a href=\"/Noticias/Mundo/0,,MUL1020883-5602,00-OBAMA+CONFIRMA+SAIDA+TOTAL+DAS+TROPAS+AMERICANAS+DO+IRAQUE+PARA+FIM+DE.html\">Obama confirma para o fim de 2011 sa&iacute;da de tropas do Iraque </a>\r\n</h3>\r\n<p>No entanto, miss&otilde;es de combate americanas j&aacute; deixam o pa&iacute;s at&eacute; agosto de 2010. </p>\r\n</div><div class=\"dest\">\r\n<img src=\"/Noticias/foto/0,,18555885,00.jpg\"><p class=\"titulo\">\r\n\r\n<a href=\"/Noticias/Cinema/0,,MUL1020969-7086,00-TABLOIDE+INGLES+PUBLICA+FOTOS+DE+ATOR+MIRIM+DE+MILIONARIO+APOS+SUPOSTA+SURR.html\">Ator-mirim leva surra do pai ap&oacute;s vit&oacute;ria no Oscar, diz tabl&oacute;ide</a>\r\n</p>\r\n</div><div class=\"dest\">\r\n<p class=\"titulo\">\r\n<a href=\"/Noticias/Economia_Negocios/0,,MUL1020607-9356,00-PRESIDENTE+DE+TRIBUNAL+SUSPENDE+AS+MIL+DEMISSOES+NA+EMBRAER.html\">Justi&ccedil;a suspende 4.200 demiss&otilde;es na Embraer at&eacute; quinta</a>\r\n</p>\r\n</div><div class=\"dest\">\r\n<img src=\"/Noticias/foto/0,,18552670,00.jpg\"><p class=\"titulo\">\r\n\r\n<a href=\"/Noticias/Mundo/0,,MUL1020822-5602,00-BRASILEIRA+FERIDA+NA+SUICA+PRESTA+DEPOIMENTO+EM+ZURIQUE.html\">Brasileira ferida presta depoimento em Zurique</a>\r\n</p>\r\n</div>\r\n\r\n\r\n		<div class=\"mais\"><a href=\"/Noticias/0,,DES-5597,00.html\" class=\"ge\"><strong>&raquo; todos os destaques</strong></a><br /></div>\r\n		\r\n		\r\n\r\n\r\n\r\n	\r\n	\r\n\r\n\r\n\r\n\r\n\r\n\r\n		<div align=\"center\" class=\"banner\">\r\n			\r\n				<img src=\"http://ads.globo.com/RealMedia/ads/adstream_nx.ads/g1/home@x21!x21\" border=\"0\" />\r\n			\r\n		</div>\r\n	\r\n\r\n		\r\n		<!-- PLANTAO -->\r\n\r\n		<h4>plant&atilde;o</h4>	\r\n<div class=\"plantao\">\r\n	<div class=\"data\">SEX, 27/02/2009</div>\r\n	<p class=\"pl\">\r\n<span><strong>17H|37</strong> | economia e neg&oacute;cios</span><a href=\"/Noticias/Economia_Negocios/0,,MUL1021178-9356,00-DOLAR+ACUMULA+ALTA+DE+EM+FEVEREIRO+E+FECHA+A+R.html\">D&oacute;lar acumula alta de 2,46% em fevereiro e fecha a R$ 2,371</a>\r\n\r\n</p><p class=\"pl\">\r\n<span><strong>17H|35</strong> | rio de janeiro</span><a href=\"/Noticias/Rio/0,,MUL1021158-5606,00-CINCO+MORADORES+DE+RUA+SAO+DETIDOS+NA+ZONA+SUL+DO+RIO.html\">Cinco moradores de rua s&atilde;o detidos na Zona Sul do Rio</a>\r\n</p><p class=\"p2\">\r\n<span><strong>17H|16</strong> | s&atilde;o paulo</span><a href=\"/Noticias/SaoPaulo/0,,MUL1020543-5605,00-TAUBATE+E+IGUAPE+SAO+AS+CIDADES+MAIS+CASTIGADAS+PELA+CHUVA+EM+SP+DIZ+INMET.html\">Taubat&eacute; e Iguape s&atilde;o as cidades mais castigadas pela chuva em SP, diz Inmet</a>\r\n\r\n</p>\r\n\r\n</div>\r\n\r\n\r\n		<div class=\"mais\"><a href=\"/Noticias/0,,RSS-5597,00.html\" class=\"ge\"><strong>&raquo; todas as notícias</strong></a></div>\r\n	\r\n <!-- MENU -->\r\n		\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n	\r\n	\r\n	\r\n	\r\n		<form class=\"\" action=\"/SecaoRedirect.ssp\" id=\"frm-esporte\">\r\n			<fieldset>\r\n				<label for=\"secoes\">Editorias</label>\r\n\r\n				<select id=\"secoes\" name=\"secoes\">\r\n					<optgroup label=\"G1\">\r\n						\r\n							<option value=\"5598\">Brasil</option>\r\n						\r\n							<option value=\"9658\">Carros</option>\r\n						\r\n							<option value=\"5603\">Ciência e Saúde</option>\r\n						\r\n							<option value=\"9654\">Concursos e Empregos</option>\r\n						\r\n							<option value=\"9356\">Economia e Negócios</option>\r\n\r\n						\r\n							<option value=\"15693\">Eleições 2008</option>\r\n						\r\n							<option value=\"5602\">Mundo</option>\r\n						\r\n							<option value=\"6091\">Planeta Bizarro</option>\r\n						\r\n							<option value=\"5601\">Política</option>\r\n						\r\n							<option value=\"7084\">Pop &amp; Arte</option>\r\n\r\n						\r\n							<option value=\"5606\">Rio de Janeiro</option>\r\n						\r\n							<option value=\"5605\">São Paulo</option>\r\n						\r\n							<option value=\"6174\">Tecnologia</option>\r\n						\r\n							<option value=\"5604\">Vestibular e Educação</option>\r\n						\r\n					</optgroup>\r\n				</select>&nbsp;\r\n				<input type=\"submit\" value=\"ok\" />\r\n\r\n			</fieldset>\r\n		</form>\r\n	\r\n\r\n		\r\n		<div class=\"lnks\"><a href=\"#topo\">topo</a> | <a href=\"http://g1.globo.com/Noticias/0,,5597,00.html\">versão clássica</a></div>\r\n\r\n	</div>\r\n	\r\n	<!-- RODAPE -->\r\n	\r\n\r\n<div class=\"rdp\">\r\n\r\n	<a href=\"http://m.g1.globo.com/Noticias/0,,5597,00.html\">notícias</a> | <a href=\"http://m.globoesporte.globo.com/Esportes/0,,9645,00.html\">esportes</a> | <a href=\"http://m.ego.globo.com/Gente/0,,9796,00.html\">entretenimento</a><hr />\r\n	<a href=\"http://m.globo.com\">globo.com</a>\r\n</div>\r\n\r\n\r\n	\r\n', `updated_at` = '2009-02-27 20:52:21', `position` = 0, `parent_id` = 0 WHERE `id` = 1[0m
+  [4;36;1mSQL (23.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to #<Page:0x7f9ced1aa3d8>
+Completed in 48ms (DB: 25) | 302 Found [http://localhost/pages/1]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-02-27 17:52:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPage Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.4ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 25ms (View: 10, DB: 2) | 200 OK [http://localhost/pages/1]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing WebController#index (for 127.0.0.1 at 2009-02-27 17:52:24) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPage Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+Rendering template within layouts/mobile
+Rendering web/index
+Completed in 93ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-27 17:52:24) [GET]
+
+
+ActionController::RoutingError (No route matches "/Noticias/foto/0,,18555885,00.jpg" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-27 17:52:25) [GET]
+
+
+ActionController::RoutingError (No route matches "/Noticias/foto/0,,18552670,00.jpg" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2009-02-27 17:52:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPage Load (0.3ms)[0m   [0;1mSELECT * FROM `pages` [0m
+  [4;35;1mPage Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering pages/edit
+Completed in 111ms (View: 15, DB: 2) | 200 OK [http://localhost/pages/1/edit]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing PagesController#update (for 127.0.0.1 at 2009-02-27 17:52:55) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"43a21e4a5f408ddfb826096200b5672584c9f5fd", "id"=>"1", "page"=>{"restricted"=>"0", "position"=>"0", "obs"=>"sdssdsdsdsdsd", "name"=>"teste danilo", "title_visibility"=>"1", "color"=>"#fff", "publish"=>"1", "content"=>"\t\r\n<div id=\"topo\" style=\"text-align:center\">\r\n<h2>Este é o topo do site mobile</h2>\r\n</div>\r\n\r\n\t<div id=\"cont\">\r\n\t\t<!-- DESTAQUE -->\r\n\r\n\t\t<div class=\"dest\">\r\n<h3>\r\n<a href=\"/Noticias/Mundo/0,,MUL1020883-5602,00-OBAMA+CONFIRMA+SAIDA+TOTAL+DAS+TROPAS+AMERICANAS+DO+IRAQUE+PARA+FIM+DE.html\">Obama confirma para o fim de 2011 sa&iacute;da de tropas do Iraque </a>\r\n</h3>\r\n<p>No entanto, miss&otilde;es de combate americanas j&aacute; deixam o pa&iacute;s at&eacute; agosto de 2010. </p>\r\n</div><div class=\"dest\">\r\n<img src=\"/Noticias/foto/0,,18555885,00.jpg\"><p class=\"titulo\">\r\n\r\n<a href=\"/Noticias/Cinema/0,,MUL1020969-7086,00-TABLOIDE+INGLES+PUBLICA+FOTOS+DE+ATOR+MIRIM+DE+MILIONARIO+APOS+SUPOSTA+SURR.html\">Ator-mirim leva surra do pai ap&oacute;s vit&oacute;ria no Oscar, diz tabl&oacute;ide</a>\r\n</p>\r\n</div><div class=\"dest\">\r\n<p class=\"titulo\">\r\n<a href=\"/Noticias/Economia_Negocios/0,,MUL1020607-9356,00-PRESIDENTE+DE+TRIBUNAL+SUSPENDE+AS+MIL+DEMISSOES+NA+EMBRAER.html\">Justi&ccedil;a suspende 4.200 demiss&otilde;es na Embraer at&eacute; quinta</a>\r\n</p>\r\n</div><div class=\"dest\">\r\n<img src=\"/Noticias/foto/0,,18552670,00.jpg\"><p class=\"titulo\">\r\n\r\n<a href=\"/Noticias/Mundo/0,,MUL1020822-5602,00-BRASILEIRA+FERIDA+NA+SUICA+PRESTA+DEPOIMENTO+EM+ZURIQUE.html\">Brasileira ferida presta depoimento em Zurique</a>\r\n</p>\r\n</div>\r\n\r\n\r\n\t\t<div class=\"mais\"><a href=\"/Noticias/0,,DES-5597,00.html\" class=\"ge\"><strong>&raquo; todos os destaques</strong></a><br /></div>\r\n\t\t\r\n\t\t\r\n\r\n\r\n\r\n\t\r\n\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\t<div align=\"center\" class=\"banner\">\r\n\t\t\t\r\n\t\t\t\t<img src=\"http://ads.globo.com/RealMedia/ads/adstream_nx.ads/g1/home@x21!x21\" border=\"0\" />\r\n\t\t\t\r\n\t\t</div>\r\n\t\r\n\r\n\t\t\r\n\t\t<!-- PLANTAO -->\r\n\r\n\t\t<h4>plant&atilde;o</h4>\t\r\n<div class=\"plantao\">\r\n\t<div class=\"data\">SEX, 27/02/2009</div>\r\n\t<p class=\"pl\">\r\n<span><strong>17H|37</strong> | economia e neg&oacute;cios</span><a href=\"/Noticias/Economia_Negocios/0,,MUL1021178-9356,00-DOLAR+ACUMULA+ALTA+DE+EM+FEVEREIRO+E+FECHA+A+R.html\">D&oacute;lar acumula alta de 2,46% em fevereiro e fecha a R$ 2,371</a>\r\n\r\n</p><p class=\"pl\">\r\n<span><strong>17H|35</strong> | rio de janeiro</span><a href=\"/Noticias/Rio/0,,MUL1021158-5606,00-CINCO+MORADORES+DE+RUA+SAO+DETIDOS+NA+ZONA+SUL+DO+RIO.html\">Cinco moradores de rua s&atilde;o detidos na Zona Sul do Rio</a>\r\n</p><p class=\"p2\">\r\n<span><strong>17H|16</strong> | s&atilde;o paulo</span><a href=\"/Noticias/SaoPaulo/0,,MUL1020543-5605,00-TAUBATE+E+IGUAPE+SAO+AS+CIDADES+MAIS+CASTIGADAS+PELA+CHUVA+EM+SP+DIZ+INMET.html\">Taubat&eacute; e Iguape s&atilde;o as cidades mais castigadas pela chuva em SP, diz Inmet</a>\r\n\r\n</p>\r\n\r\n</div>\r\n\r\n\r\n\t\t<div class=\"mais\"><a href=\"/Noticias/0,,RSS-5597,00.html\" class=\"ge\"><strong>&raquo; todas as notícias</strong></a></div>\r\n\t\r\n        <!-- MENU -->\r\n\t\t\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\t\r\n\t\r\n\t\r\n\t\r\n\t\t<form class=\"\" action=\"/SecaoRedirect.ssp\" id=\"frm-esporte\">\r\n\t\t\t<fieldset>\r\n\t\t\t\t<label for=\"secoes\">Editorias</label>\r\n\r\n\t\t\t\t<select id=\"secoes\" name=\"secoes\">\r\n\t\t\t\t\t<optgroup label=\"G1\">\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5598\">Brasil</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"9658\">Carros</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5603\">Ciência e Saúde</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"9654\">Concursos e Empregos</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"9356\">Economia e Negócios</option>\r\n\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"15693\">Eleições 2008</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5602\">Mundo</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"6091\">Planeta Bizarro</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5601\">Política</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"7084\">Pop &amp; Arte</option>\r\n\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5606\">Rio de Janeiro</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5605\">São Paulo</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"6174\">Tecnologia</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t<option value=\"5604\">Vestibular e Educação</option>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t</optgroup>\r\n\t\t\t\t</select>&nbsp;\r\n\t\t\t\t<input type=\"submit\" value=\"ok\" />\r\n\r\n\t\t\t</fieldset>\r\n\t\t</form>\r\n\t\r\n\r\n\t\t\r\n\t\t<div class=\"lnks\"><a href=\"#topo\">topo</a> | <a href=\"http://g1.globo.com/Noticias/0,,5597,00.html\">versão clássica</a></div>\r\n\r\n\t</div>\r\n\t\r\n\t<!-- RODAPE -->\r\n\t\r\n\r\n<div class=\"rdp\">\r\n\r\n\t<a href=\"http://m.g1.globo.com/Noticias/0,,5597,00.html\">notícias</a> | <a href=\"http://m.globoesporte.globo.com/Esportes/0,,9645,00.html\">esportes</a> | <a href=\"http://m.ego.globo.com/Gente/0,,9796,00.html\">entretenimento</a><hr />\r\n\t<a href=\"http://m.globo.com\">globo.com</a>\r\n</div>\r\n\r\n\r\n\t\r\n", "parent_id"=>"0", "link"=>"", "is_menu"=>"0"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPage Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPage Update (0.6ms)[0m   [0mUPDATE `pages` SET `content` = '	\r\n<div id=\"topo\" style=\"text-align:center\">\r\n<h2>Este é o topo do site mobile</h2>\r\n</div>\r\n\r\n	<div id=\"cont\">\r\n		<!-- DESTAQUE -->\r\n\r\n		<div class=\"dest\">\r\n<h3>\r\n<a href=\"/Noticias/Mundo/0,,MUL1020883-5602,00-OBAMA+CONFIRMA+SAIDA+TOTAL+DAS+TROPAS+AMERICANAS+DO+IRAQUE+PARA+FIM+DE.html\">Obama confirma para o fim de 2011 sa&iacute;da de tropas do Iraque </a>\r\n</h3>\r\n<p>No entanto, miss&otilde;es de combate americanas j&aacute; deixam o pa&iacute;s at&eacute; agosto de 2010. </p>\r\n</div><div class=\"dest\">\r\n<img src=\"/Noticias/foto/0,,18555885,00.jpg\"><p class=\"titulo\">\r\n\r\n<a href=\"/Noticias/Cinema/0,,MUL1020969-7086,00-TABLOIDE+INGLES+PUBLICA+FOTOS+DE+ATOR+MIRIM+DE+MILIONARIO+APOS+SUPOSTA+SURR.html\">Ator-mirim leva surra do pai ap&oacute;s vit&oacute;ria no Oscar, diz tabl&oacute;ide</a>\r\n</p>\r\n</div><div class=\"dest\">\r\n<p class=\"titulo\">\r\n<a href=\"/Noticias/Economia_Negocios/0,,MUL1020607-9356,00-PRESIDENTE+DE+TRIBUNAL+SUSPENDE+AS+MIL+DEMISSOES+NA+EMBRAER.html\">Justi&ccedil;a suspende 4.200 demiss&otilde;es na Embraer at&eacute; quinta</a>\r\n</p>\r\n</div><div class=\"dest\">\r\n<img src=\"/Noticias/foto/0,,18552670,00.jpg\"><p class=\"titulo\">\r\n\r\n<a href=\"/Noticias/Mundo/0,,MUL1020822-5602,00-BRASILEIRA+FERIDA+NA+SUICA+PRESTA+DEPOIMENTO+EM+ZURIQUE.html\">Brasileira ferida presta depoimento em Zurique</a>\r\n</p>\r\n</div>\r\n\r\n\r\n		<div class=\"mais\"><a href=\"/Noticias/0,,DES-5597,00.html\" class=\"ge\"><strong>&raquo; todos os destaques</strong></a><br /></div>\r\n		\r\n		\r\n\r\n\r\n\r\n	\r\n	\r\n\r\n\r\n\r\n\r\n\r\n\r\n		<div align=\"center\" class=\"banner\">\r\n			\r\n				<img src=\"http://ads.globo.com/RealMedia/ads/adstream_nx.ads/g1/home@x21!x21\" border=\"0\" />\r\n			\r\n		</div>\r\n	\r\n\r\n		\r\n		<!-- PLANTAO -->\r\n\r\n		<h4>plant&atilde;o</h4>	\r\n<div class=\"plantao\">\r\n	<div class=\"data\">SEX, 27/02/2009</div>\r\n	<p class=\"pl\">\r\n<span><strong>17H|37</strong> | economia e neg&oacute;cios</span><a href=\"/Noticias/Economia_Negocios/0,,MUL1021178-9356,00-DOLAR+ACUMULA+ALTA+DE+EM+FEVEREIRO+E+FECHA+A+R.html\">D&oacute;lar acumula alta de 2,46% em fevereiro e fecha a R$ 2,371</a>\r\n\r\n</p><p class=\"pl\">\r\n<span><strong>17H|35</strong> | rio de janeiro</span><a href=\"/Noticias/Rio/0,,MUL1021158-5606,00-CINCO+MORADORES+DE+RUA+SAO+DETIDOS+NA+ZONA+SUL+DO+RIO.html\">Cinco moradores de rua s&atilde;o detidos na Zona Sul do Rio</a>\r\n</p><p class=\"p2\">\r\n<span><strong>17H|16</strong> | s&atilde;o paulo</span><a href=\"/Noticias/SaoPaulo/0,,MUL1020543-5605,00-TAUBATE+E+IGUAPE+SAO+AS+CIDADES+MAIS+CASTIGADAS+PELA+CHUVA+EM+SP+DIZ+INMET.html\">Taubat&eacute; e Iguape s&atilde;o as cidades mais castigadas pela chuva em SP, diz Inmet</a>\r\n\r\n</p>\r\n\r\n</div>\r\n\r\n\r\n		<div class=\"mais\"><a href=\"/Noticias/0,,RSS-5597,00.html\" class=\"ge\"><strong>&raquo; todas as notícias</strong></a></div>\r\n	\r\n <!-- MENU -->\r\n		\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n	\r\n	\r\n	\r\n	\r\n		<form class=\"\" action=\"/SecaoRedirect.ssp\" id=\"frm-esporte\">\r\n			<fieldset>\r\n				<label for=\"secoes\">Editorias</label>\r\n\r\n				<select id=\"secoes\" name=\"secoes\">\r\n					<optgroup label=\"G1\">\r\n						\r\n							<option value=\"5598\">Brasil</option>\r\n						\r\n							<option value=\"9658\">Carros</option>\r\n						\r\n							<option value=\"5603\">Ciência e Saúde</option>\r\n						\r\n							<option value=\"9654\">Concursos e Empregos</option>\r\n						\r\n							<option value=\"9356\">Economia e Negócios</option>\r\n\r\n						\r\n							<option value=\"15693\">Eleições 2008</option>\r\n						\r\n							<option value=\"5602\">Mundo</option>\r\n						\r\n							<option value=\"6091\">Planeta Bizarro</option>\r\n						\r\n							<option value=\"5601\">Política</option>\r\n						\r\n							<option value=\"7084\">Pop &amp; Arte</option>\r\n\r\n						\r\n							<option value=\"5606\">Rio de Janeiro</option>\r\n						\r\n							<option value=\"5605\">São Paulo</option>\r\n						\r\n							<option value=\"6174\">Tecnologia</option>\r\n						\r\n							<option value=\"5604\">Vestibular e Educação</option>\r\n						\r\n					</optgroup>\r\n				</select>&nbsp;\r\n				<input type=\"submit\" value=\"ok\" />\r\n\r\n			</fieldset>\r\n		</form>\r\n	\r\n\r\n		\r\n		<div class=\"lnks\"><a href=\"#topo\">topo</a> | <a href=\"http://g1.globo.com/Noticias/0,,5597,00.html\">versão clássica</a></div>\r\n\r\n	</div>\r\n	\r\n	<!-- RODAPE -->\r\n	\r\n\r\n<div class=\"rdp\">\r\n\r\n	<a href=\"http://m.g1.globo.com/Noticias/0,,5597,00.html\">notícias</a> | <a href=\"http://m.globoesporte.globo.com/Esportes/0,,9645,00.html\">esportes</a> | <a href=\"http://m.ego.globo.com/Gente/0,,9796,00.html\">entretenimento</a><hr />\r\n	<a href=\"http://m.globo.com\">globo.com</a>\r\n</div>\r\n\r\n\r\n	\r\n', `updated_at` = '2009-02-27 20:52:55', `position` = 0, `parent_id` = 0 WHERE `id` = 1[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to #<Page:0x7f9cece833a8>
+Completed in 30ms (DB: 7) | 302 Found [http://localhost/pages/1]
+  [4;35;1mUser Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing PagesController#show (for 127.0.0.1 at 2009-02-27 17:52:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPage Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.3ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering pages/show
+Completed in 24ms (View: 9, DB: 2) | 200 OK [http://localhost/pages/1]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing WebController#index (for 127.0.0.1 at 2009-02-27 17:53:02) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPage Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+Rendering template within layouts/mobile
+Rendering web/index
+Completed in 22ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-27 17:53:02) [GET]
+
+
+ActionController::RoutingError (No route matches "/Noticias/foto/0,,18555885,00.jpg" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-27 17:53:02) [GET]
+
+
+ActionController::RoutingError (No route matches "/Noticias/foto/0,,18552670,00.jpg" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing WebController#index (for 127.0.0.1 at 2009-03-02 13:39:43) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPage Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.5ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+Rendering template within layouts/mobile
+Rendering web/index
+Completed in 31ms (View: 13, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-02 13:39:44) [GET]
+
+
+ActionController::RoutingError (No route matches "/Noticias/foto/0,,18555885,00.jpg" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-02 13:39:44) [GET]
+
+
+ActionController::RoutingError (No route matches "/Noticias/foto/0,,18552670,00.jpg" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:103:in `handle_dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/webrick_server.rb:60:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/webrick.rb:66
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-03-02 13:39:56) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Redirected to controllerloginactionindex
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/admin]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-03-02 13:39:56) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-03-02 13:40:02) [POST]
+  Parameters: {"commit"=>"Entrar", "authenticity_token"=>"e895973788f2f30aa4e7dda5174bb44642c23c60", "login"=>{"name"=>"didox", "password"=>"teste"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'didox' AND `users`.`password` = 'teste') [0m
+Redirected to /admin
+Completed in 18ms (DB: 2) | 302 Found [http://localhost/logar]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2009-03-02 13:40:02) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering admin/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/admin]
+  [4;36;1mUser Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+
+Processing FullBannersController#index (for 127.0.0.1 at 2009-03-02 13:40:04) [GET]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mFullBanner Load (0.3ms)[0m   [0mSELECT * FROM `full_banners` [0m
+Rendering template within layouts/application
+Rendering full_banners/index
+  [4;36;1mFullBanner Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `full_banners`[0m
+Completed in 144ms (View: 133, DB: 1) | 200 OK [http://localhost/full_banners]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing FullBannersController#new (for 127.0.0.1 at 2009-03-02 13:40:08) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mFullBanner Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `full_banners`[0m
+Rendering template within layouts/application
+Rendering full_banners/new
+Completed in 107ms (View: 88, DB: 1) | 200 OK [http://localhost/full_banners/new]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing FullBannersController#create (for 127.0.0.1 at 2009-03-02 13:40:09) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"e895973788f2f30aa4e7dda5174bb44642c23c60", "full_banner"=>{"date_end(4i)"=>"16", "name"=>"", "date_end(5i)"=>"40", "date_begin(1i)"=>"2009", "date_begin(2i)"=>"3", "date_begin(3i)"=>"2", "date_begin(4i)"=>"16", "date_begin(5i)"=>"40", "link"=>"", "date_end(1i)"=>"2009", "file"=>"", "date_end(2i)"=>"3", "date_end(3i)"=>"2"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mFullBanner Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `full_banners`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering full_banners/new
+Completed in 44ms (View: 20, DB: 1) | 200 OK [http://localhost/full_banners]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+
+Processing FullBannersController#create (for 127.0.0.1 at 2009-03-02 13:40:32) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"e895973788f2f30aa4e7dda5174bb44642c23c60", "full_banner"=>{"date_end(4i)"=>"16", "name"=>"", "date_end(5i)"=>"40", "date_begin(1i)"=>"2009", "date_begin(2i)"=>"3", "date_begin(3i)"=>"2", "date_begin(4i)"=>"16", "date_begin(5i)"=>"40", "link"=>"", "date_end(1i)"=>"2009", "file"=>#<ActionController::UploadedStringIO:0x7f2776b43350>, "date_end(2i)"=>"3", "date_end(3i)"=>"2"}}
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mFullBanner Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `full_banners`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering full_banners/new
+Completed in 41ms (View: 20, DB: 1) | 200 OK [http://localhost/full_banners]
+  [4;35;1mUser Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
